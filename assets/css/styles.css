@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Livvic&display=swap');
+
+:root {
+    --color-primary: #00acc1;
+    --color-secondary: #8bc34a;
+
+    --color-text: #fff;
+    --color-text-btn: #3949ab;
+    --color-text-btn-dark: #6f74dd;
+
+
+    --background-gradient: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+
+    --font-normal: 'Livvic', sans-serif;
+}
+
+html, body {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+
+.bg-main { background: var(--background-gradient); }
+.heading-main { font-family: var(--font-normal); letter-spacing: 1px; font-size: 24px; }
+
+.text-desc {
+    position: relative;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.desc_card {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.cbtn {
+    font-size: 16px;
+    border: none;
+    border-radius: 0px;
+    padding: 4px 20px !important;
+    margin: 0px !important;
+    box-sizing: border-box;
+    font-family: var(--font-normal);
+    cursor: pointer;
+    background: transparent;
+    color: var(--color-text-btn);
+    transition: background-color 0.14s ease-in-out, color 0.14s ease-in-out;
+    position: relative;
+    z-index: 1;
+    border-radius: 2px; 
+}
+
+.divider {
+    width: 100%;
+    height: 4px;
+    background: var(--background-gradient);
+    border-radius: 20%;
+}
+
+.cbtn:hover {
+    background: var(--color-text-btn);
+    color: #efefef;
+}
+
+.image-container {
+    height: 100vh;
+    width: 100%;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: 720px;
+    background-position: center;
+    position: relative;
+    background-attachment: fixed; 
+}
+
+.image_src_0 { background-image: url(../images/profo.png); }
+.image_src_1 { background-image: url(../images/editox.png); }
+.image_src_2 { background-image: url(../images/hillshare.png); }
+.image_src_3 { background-image: url(../images/moneyGame.png); }
+.image_src_4 { background-image: url(../images/resistanceGame.png); }
+.image_src_5 { background-image: url(../images/magnetGame.png); }
+.image_src_6 { background-image: url(../images/guiTerm.png); }
+.image_src_7 { background-image: url(../images/neuralStyleTransfer.png); }
+.image_src_8 { background-image: url(../images/DigitRecognitionCNNImageMain.png); }
+.image_src_9 { background-image: url(../images/snakky.png); }
+
+.social-icon {
+    font-size: 24px;
+}
+
+
+.header {
+    height: calc(100vh);
+    font-family: var(--font-normal);
+}
+
+.at-bottom {
+    position: relative;
+    bottom: -100%;
+    transform: translateY(-100%);
+}
+
+.social-link{
+    color: var(--color-primary);
+    transition: color 0.14s ease-in;
+}
+
+.social-link:hover {
+    color: #007c91;
+}
+
+.random-image-1 {
+    width: 360px;
+    height: 360px;
+    background: #ededed;
+    border-radius: 70% 30% 30% 70%/ 60% 40% 60% 40%;
+    animation: fuzzychanger linear 5s infinite;
+}
+
+.random-image-2 {
+    width: 360px;
+    height: 360px;
+    transform: rotate(25deg);
+    background: var(--background-gradient);
+    border-radius: 70% 30% 30% 70%/ 60% 40% 60% 40%;
+    animation: fuzzychanger linear 5s infinite;
+}
+
+.random-image-container {
+    top: 20%;
+    /* left: 50%; */
+    transform: translate(-50%, -50%);
+}
+
+@keyframes fuzzychanger {
+    0% { border-radius: 70% 30% 30% 70%/ 60% 40% 60% 40%; }
+    50% { border-radius: 50% 50% 50% 50%/ 60% 40% 60% 40%; }
+    99% { border-radius: 70% 30% 30% 70%/ 60% 40% 60% 40%; }
+}
